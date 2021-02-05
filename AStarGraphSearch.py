@@ -168,8 +168,8 @@ def aStar(width = 10, height = 10):
 			checkSpot = (checkCol, checkRow)
 			inClose=False
 			#check above wall
-			for fuck in closed:
-				if(fuck[3]==checkSpot):
+			for finder in closed:
+				if(finder[3]==checkSpot):
 					inClose=True
 			if(checkCol<height and checkCol>=0 and (inClose==False)):
 				if(arrTemp[checkCol][checkRow]!=1):
@@ -211,8 +211,8 @@ def aStar(width = 10, height = 10):
 			checkCol=agentCol
 			checkSpot= (checkCol, checkRow)
 			inClose=False
-			for fuck in closed:
-				if(fuck[3]==checkSpot):
+			for finder in closed:
+				if(finder[3]==checkSpot):
 					inClose=True
 			if(checkRow<width and checkRow>=0 and (inClose==False)):
 				if(arrTemp[checkCol][checkRow]!=1):
@@ -254,8 +254,8 @@ def aStar(width = 10, height = 10):
 			checkCol=agentCol
 			checkSpot= (checkCol, checkRow)
 			inClose=False
-			for fuck in closed:
-				if(fuck[3]==checkSpot):
+			for finder in closed:
+				if(finder[3]==checkSpot):
 					inClose=True
 			if(checkRow<width and checkRow>=0 and (inClose==False)):
 				if(arrTemp[checkCol][checkRow]!=1):
@@ -298,8 +298,8 @@ def aStar(width = 10, height = 10):
 			checkCol=agentCol-1
 			checkSpot= (checkCol, checkRow)
 			inClose=False
-			for fuck in closed:
-				if(fuck[3]==checkSpot):
+			for finder in closed:
+				if(finder[3]==checkSpot):
 					inClose=True
 			if(checkCol<height and checkCol>=0 and (inClose==False)):
 				if(arrTemp[checkCol][checkRow]!=1):
